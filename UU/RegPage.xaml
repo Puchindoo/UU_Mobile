@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:UU"
+             x:Class="UU.RegPage" x:Name="Reg"
+             NavigationPage.HasNavigationBar="False">
+    <StackLayout>
+    <Image Source="/Resources/drawable/Logo.png" Margin="0,100,0,50"></Image>
+        <local:EntryCustom
+        x:Name="Login" 
+        CornerRadius="16" 
+        IsCurvedCornersEnabled="True" 
+        HorizontalTextAlignment="Start" 
+        FontSize="16" 
+        BorderWidth="7" 
+        HeightRequest="48" 
+        Placeholder="Введите логин" 
+        PlaceholderColor="Black" 
+        TextColor="Black" 
+        FontAttributes="None" 
+        WidthRequest="350" 
+        HorizontalOptions="Center"  
+        Margin="0,0,0,10"
+        FontFamily="JostM"/>
+        <local:EntryCustom
+        x:Name="Email" 
+        CornerRadius="16" 
+        IsCurvedCornersEnabled="True" 
+        HorizontalTextAlignment="Start" 
+        FontSize="16" 
+        BorderWidth="7" 
+        HeightRequest="48" 
+        Placeholder="Введите почту" 
+        PlaceholderColor="Black" 
+        TextColor="Black" 
+        FontAttributes="None" 
+        WidthRequest="350" 
+        HorizontalOptions="Center"  
+        Margin="0,0,0,10"
+        FontFamily="JostM"/>
+        <local:EntryCustom
+        IsPassword="True"
+        x:Name="Password" 
+        CornerRadius="16" 
+        IsCurvedCornersEnabled="True" 
+        HorizontalTextAlignment="Start" 
+        FontSize="16" 
+        BorderWidth="7" 
+        HeightRequest="48" 
+        Placeholder="Введите пароль" 
+        PlaceholderColor="Black" 
+        TextColor="Black" 
+        FontAttributes="None" 
+        WidthRequest="350" 
+        HorizontalOptions="Center"  
+        Margin="0,0,0,10"
+        FontFamily="JostM"/>
+        <local:EntryCustom
+        IsPassword="True"
+        x:Name="PasswordCheck" 
+        CornerRadius="16" 
+        IsCurvedCornersEnabled="True" 
+        HorizontalTextAlignment="Start" 
+        FontSize="16" 
+        BorderWidth="7" 
+        HeightRequest="48" 
+        Placeholder="Введите пароль ещё раз" 
+        PlaceholderColor="Black" 
+        TextColor="Black" 
+        FontAttributes="None" 
+        WidthRequest="350" 
+        HorizontalOptions="Center"  
+        Margin="0,0,0,40"
+        FontFamily="JostM"/>
+        <Button Text="Зарегистрироваться" TextTransform="Default" BackgroundColor="#3045FF" CornerRadius="16" WidthRequest="311" HorizontalOptions="Center" Margin="0,0,0,10" FontFamily="JostS" FontSize="24" Clicked="ButtonReg_Clicked"></Button>
+        <Label Text="Уже есть аккаунт" FontSize="16" TextColor="White" HorizontalOptions="Center" FontFamily="JostB" x:Name="HaveAnAcc"></Label>
+    </StackLayout>
+</ContentPage>
